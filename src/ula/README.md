@@ -22,3 +22,4 @@
 - Z impedância (o valor não importa, deixa passar qualquer coisa, eletrônica)
 
 
+Luiz Eduardo Garzon
