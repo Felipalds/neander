@@ -21,5 +21,3 @@
 - quando reseetar o neander, a flag Z precisa estar em 1
 - Z impedância (o valor não importa, deixa passar qualquer coisa, eletrônica)
 
-
-Luiz Eduardo Garzon
