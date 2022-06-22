@@ -26,7 +26,15 @@ architecture calculator of ula is
         s_ac2ula, s_ula2ac : std_logic_vector(7 downto 0);
         s_ac2flags : std_logic_vector(1 downto 0);
 
-    -- component registrator -> AC
+    component registrador is
+        port(
+            d      : in  std_logic_vector(7 downto 0);
+            clock  : in  std_logic;
+            pr, cl : in  std_logic;
+            nrw    : in  std_logic;
+            s      : out std_logic_vector(7 downto 0)
+        );
+    end component;
     -- component registrator -> flagsNZ
     -- component ulaalu 
 
