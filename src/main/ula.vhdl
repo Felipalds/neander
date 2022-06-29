@@ -5,7 +5,7 @@ use ieee.std_logic_1164.all;
 entity ula is
     port (
         -- dados
-        barramento : inout std_logic_vector(7 downto 0),
+        barramento : inout std_logic_vector(7 downto 0);
 
         -- controle
         rst, clk : in std_logic;
@@ -14,7 +14,7 @@ entity ula is
         ula_op : in std_logic_vector(2 downto 0);
 
         -- status
-        flagsNZ : out std_logic_vector(1 downto 0);
+        intFlags : out std_logic_vector(1 downto 0)
     );
 
 
@@ -32,10 +32,10 @@ architecture calculator of ula is
             s: out std_logic_vector(7 downto 0);
 
             -- controle
-            ula_op : in std_logic_vector(3 downto 0);
+            ula_op : in std_logic_vector(2 downto 0);
 
             -- status
-            flagsNZ: out std_logic_vector(1 downto 0);
+            flagsNZ: out std_logic_vector(1 downto 0)
         );
     end component;
     
@@ -53,11 +53,11 @@ architecture calculator of ula is
     -- Registrador 2 Bits -> FNZ
     component regCarga2bit is
         port(
-            d      : in  std_logic;
+            d      : in  std_logic_vector(1 downto 0);
 			clock  : in  std_logic;
 			pr, cl : in  std_logic;
 			nrw    : in  std_logic;
-			s      : out std_logic
+			s      : out std_logic_vector(1 downto 0)
         );
     end component;
 
@@ -67,10 +67,10 @@ architecture calculator of ula is
 begin
     -- Unidades/Componentes
     u_AC : regCarga8bit port map(s_ula2ac, clk, '1', rst, ac_nrw, s_ac2ula);
-    u_FNZ : regCaraga2bit port map(s_ac2flags, clk, '1', rst, ac_nrw, flagsNZ); -- Componente FLAGS
-    u_ulaalu : ulaalu port map(s_ac2ula, barramento, s_ula2ac, ula_op, flagsNZ);
+    u_FNZ : regCarga2bit port map(s_ac2flags, clk, '1', rst, ac_nrw, intFlags); -- Componente FLAGS
+    u_ulaalu : ulaalu port map(s_ac2ula, barramento, s_ula2ac, ula_op, s_ac2flags);
 
     -- Mux Especial 2x8
-    barramento <= s_ac2ula when mem_nrw = '1' else (others <= 'Z');
+    barramento <= s_ac2ula when mem_nrw = '1' else (others => 'Z');
 
 end architecture;
