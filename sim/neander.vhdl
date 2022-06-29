@@ -36,16 +36,8 @@ architecture cha_mate of neander is
             interface_barramento : inout std_logic_vector(7 downto 0)
         );
     end component;
-
-    -- ULA Signals
-    signal interface_barramento : std_logic_vector(7 downto 0);
-    signal ac_rw, mem_rw : std_logic;
-    signal ula_op : std_logic_vector(2 downto 0);
-    signal intFlags : std_logic_vector(1 downto 0);
-
-    -- Memory Signals
-    signal barr_pc, REM_rw, RDM_rw : std_logic;
-    signal END_pc, END_barr : std_logic_vector(7 downto 0);
+    signal interface_barramento : inout std_logic_vector(7 downto 0);
+    signal ac_nrw, mem_nrw : std_logic;
 
 begin
     u_ula : ula port map();

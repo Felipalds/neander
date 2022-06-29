@@ -9,8 +9,8 @@ entity ula is
 
         -- controle
         rst, clk : in std_logic;
-        ac_nrw : in std_logic;
-        mem_nrw: in std_logic;
+        ac_rw : in std_logic;
+        mem_rw: in std_logic;
         ula_op : in std_logic_vector(2 downto 0);
 
         -- status
@@ -45,7 +45,7 @@ architecture calculator of ula is
             d      : in  std_logic_vector(7 downto 0);
             clock  : in  std_logic;
             pr, cl : in  std_logic;
-            nrw    : in  std_logic;
+            rw    : in  std_logic;
             s      : out std_logic_vector(7 downto 0)
         );
     end component regCarga8bit;
@@ -56,7 +56,7 @@ architecture calculator of ula is
             d      : in  std_logic_vector(1 downto 0);
 			clock  : in  std_logic;
 			pr, cl : in  std_logic;
-			nrw    : in  std_logic;
+			rw    : in  std_logic;
 			s      : out std_logic_vector(1 downto 0)
         );
     end component;
@@ -66,8 +66,8 @@ architecture calculator of ula is
     signal s_ac2flags : std_logic_vector(1 downto 0);
 begin
     -- Unidades/Componentes
-    u_AC : regCarga8bit port map(s_ula2ac, clk, '1', rst, ac_nrw, s_ac2ula);
-    u_FNZ : regCarga2bit port map(s_ac2flags, clk, '1', rst, ac_nrw, intFlags); -- Componente FLAGS
+    u_AC : regCarga8bit port map(s_ula2ac, clk, '1', rst, ac_rw, s_ac2ula);
+    u_FNZ : regCarga2bit port map(s_ac2flags, clk, '1', rst, ac_rw, intFlags); -- Componente FLAGS
     u_ulaalu : ulaalu port map(s_ac2ula, barramento, s_ula2ac, ula_op, s_ac2flags);
 
     -- Mux Especial 2x8
