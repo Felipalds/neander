@@ -4,12 +4,12 @@ use ieee.std_logic_1164.all;
 entity memory is
     port(
         cl, clk: in std_logic;
-        barr_pc : in std_logic_vector(7 downto 0);
+        barr_pc : in std_logic;
         REM_rw : in std_logic;
         MEM_rw : in std_logic;
         RDM_rw : in std_logic;
-        END_pc: in std_logic;
-        END_barr: in std_logic;
+        END_pc: in std_logic_vector(7 downto 0);
+        END_barr: in std_logic_vector(7 downto 0);
         interface_barramento : inout std_logic_vector(7 downto 0)
     );
 end entity;
@@ -55,13 +55,13 @@ architecture george of memory is
 
         u_mux : mux2x8 port map (END_barr, END_pc, barr_PC, s_mux2rem);
         u_rem : regCarga8bit port map (s_mux2rem, clk, '1', cl, REM_rw, s_rem2mem);
-        u_MEMORIA : as_ram port map(s_rem2mem, END_barr, MEM_rw, s_mem2rdm);
+        u_MEMORIA : as_ram port map(s_rem2mem, s_mem2rdm, MEM_rw, cl);
         u_rdm : regCarga8bit port map(s_mem2rdm, clk, '1', cl, RDM_rw, s_rdm2barramento);
 
 
-        interface_barramento <= s_rdm2barr when MEM_nrw = '0'
+        interface_barramento <= s_rdm2barr when MEM_rw = '0'
         else (others => 'Z');
-        s_mem2rdm <= interface_barramento when MEM_nrw = '1'
+        s_mem2rdm <= interface_barramento when MEM_rw = '1'
         else (others => 'Z');
 
 end architecture;
