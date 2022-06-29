@@ -31,7 +31,7 @@ architecture george of memory is
             d      : in  std_logic_vector(7 downto 0);
             clock  : in  std_logic;
             pr, cl : in  std_logic;
-            nrw    : in  std_logic;
+            rw    : in  std_logic;
             s      : out std_logic_vector(7 downto 0)
 	    );
     end component;

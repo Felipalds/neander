@@ -71,6 +71,6 @@ begin
     u_ulaalu : ulaalu port map(s_ac2ula, barramento, s_ula2ac, ula_op, s_ac2flags);
 
     -- Mux Especial 2x8
-    barramento <= s_ac2ula when mem_nrw = '1' else (others => 'Z');
+    barramento <= s_ac2ula when mem_rw = '1' else (others => 'Z');
 
 end architecture;

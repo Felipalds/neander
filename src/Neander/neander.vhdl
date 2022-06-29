@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity neander is
     port(
-        cl, clk : in std_logic;
+        cl, clk : in std_logic
     );
 end entity;
 
@@ -48,6 +48,6 @@ architecture cha_mate of neander is
     signal END_pc, END_barr : std_logic_vector(7 downto 0);
 
 begin
-    u_ula : ula port map();
-    u_memory : memory port map();
+    u_ula : ula port map(interface_barramento, cl, clk, ac_rw, mem_rw, ula_op, intFlags);
+    u_memory : memory port map(cl, clk, barr_pc, REM_rw, mem_rw, RDM_rw, END_pc, END_barr, interface_barramento);
 end architecture;
