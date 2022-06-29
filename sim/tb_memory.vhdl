@@ -39,15 +39,60 @@ begin
         clk <= '1';
         cl <= '1';
         wait for 10 ns;
-
+    -- GRAVAÇÃO DE DADOS --
         -- 1
 
         clk <= '0';
 
-        barr_pc <= '1';
+        barr_pc <= '0';
         mem_rw <= '0';
 
-        END_pc <= "00000000";
+        END_pc <= "00001111";
+        END_barr <= "11111111";
+        rem_rw <= '1';
+        rdm_rw <= '0';
+
+        wait for 10 ns;
+        -- 2
+
+        clk <= '1';
+
+        wait for 10 ns;
+        -- 3
+
+        clk <= '0';
+
+        rem_rw <= '0';
+        mem_rw <= '1';
+
+        wait for 10 ns;
+        -- 4
+
+        clk <= '1';
+
+        
+        wait for 10 ns;
+        -- 5
+
+        clk <= '0';
+        mem_rw <= '0';
+        
+
+        wait for  10 ns;
+
+        clk <= '1';
+        wait for 10 ns;
+        
+
+    -- LEITURA DE DADOS --
+    -- 1
+
+        clk <= '0';
+
+        barr_pc <= '0';
+        mem_rw <= '0';
+
+        END_pc <= "00001111";
         END_barr <= "11111111";
         rem_rw <= '1';
         rdm_rw <= '0';
@@ -70,12 +115,14 @@ begin
 
         clk <= '1';
 
+        
         wait for 10 ns;
         -- 5
 
         clk <= '0';
-
         rdm_rw <= '0';
+        
+
         wait for  10 ns;
     end process;
 

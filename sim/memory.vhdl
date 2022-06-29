@@ -59,7 +59,7 @@ architecture george of memory is
         u_rdm : regCarga8bit port map(s_mem2rdm, clk, '1', cl, RDM_rw, s_rdm2barramento);
 
 
-        interface_barramento <= s_rdm2barr when MEM_rw = '0'
+        interface_barramento <= s_rdm2barramento when MEM_rw = '0'
         else (others => 'Z');
         s_mem2rdm <= interface_barramento when MEM_rw = '1'
         else (others => 'Z');
