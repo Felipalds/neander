@@ -29,6 +29,46 @@ begin
     u_memory : memory port map(cl, clk, barr_pc, rem_rw, mem_rw, rdm_rw, END_pc, END_barr, interface_barramento);
     p_main : process
     begin
+
+-- Resetal
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+        cl <= '1';
+
+        END_pc <= "11110000";
+        END_barr <= "11111111";
+
+        barr_pc <= '1'
+        rem_rw <= '1';
+        mem_rw <= '0';
+        rdm_rw <= '0';
+        
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+
+        rem_rw <= '0';
+        rdm_rw <= '1';
+        wait for 10 ns;
+
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+
+        rdm_rw <= '0';
+        wait for 10 ns;
+
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+        wait for 10 ns;
+
+
+-- Reset( nice pratice)
+
         clk <= '0';
         wait for 10 ns;
         clk <= '1';
@@ -44,12 +84,12 @@ begin
 
         clk <= '0';
 
-        barr_pc <= '1';
-        mem_rw <= '0';
-
-        END_pc <= "00000000";
+        END_pc <= "11110000";
         END_barr <= "11111111";
-        rem_rw <= '1';
+
+	barr_pc <= '1';
+	rem_rw <= '1';
+        mem_rw <= '0';
         rdm_rw <= '0';
 
         wait for 10 ns;
@@ -76,7 +116,148 @@ begin
         clk <= '0';
 
         rdm_rw <= '0';
-        wait for  10 ns;
-    end process;
+	
+	wait for 10 ns;
+	-- 6
+	
+	clk <= '1';
+
+	wait for 10 ns;
+
+-- proximo teste
+
+	clk <= '0';
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+        cl <= '0';
+        clk <= '0';
+        wait for 10 ns;
+        clk <= '1';
+        cl <= '1';
+        wait for 10 ns;
+
+	-- 1
+
+        clk <= '0';
+
+
+	barr_pc <= '0';
+	rem_rw <= '1';
+        mem_rw <= '0';
+        rdm_rw <= '0';
+
+        wait for 10 ns;
+        -- 2
+
+        clk <= '1';
+
+        wait for 10 ns;
+        -- 3
+
+        clk <= '0';
+
+        rem_rw <= '0';
+        rdm_rw <= '1';
+
+        wait for 10 ns;
+        -- 4
+
+        clk <= '1';
+
+        wait for 10 ns;
+        -- 5
+
+        clk <= '0';
+
+        rdm_rw <= '0';
+	
+	wait for 10 ns;
+	-- 6
+	
+	clk <= '1';
+
+	wait for 10 ns;
+
+-- proximo teste
+
+	clk <= '0';
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+        cl <= '0';
+        clk <= '0';
+        wait for 10 ns;
+        clk <= '1';
+        cl <= '1';
+        wait for 10 ns;
+	-- 1
+
+	clk <= '0';
+
+	barr_pc <= '0';
+	rem_rw <= '1';
+        mem_rw <= '0';
+        rdm_rw <= '0';
+
+        wait for 10 ns;
+        -- 2
+
+        clk <= '1';
+
+        wait for 10 ns;
+        -- 3
+
+        clk <= '0';
+
+        rem_rw <= '0';
+        mem_rw <= '1';
+
+        wait for 10 ns;
+        -- 4
+
+        clk <= '1';
+
+        wait for 10 ns;
+        -- 5
+
+        clk <= '0';
+
+        mem_rw <= '0';
+	
+	wait for 10 ns;
+	-- 6
+	
+	clk <= '1';
+
+	wait for 10 ns;
+	
+
+wait for  10 ns;
+end process;
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 end architecture;

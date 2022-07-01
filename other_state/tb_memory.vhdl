@@ -20,8 +20,9 @@ architecture zaz of tb_memory is
 
     -- Signals
 
-    signal cl, clk, barr_pc, rem_rw, mem_rw, rdm_rw : std_logic := '0';
-    signal END_pc, END_barr : std_logic_vector(7 downto 0);
+    signal clk, barr_pc, rem_rw, rdm_rw : std_logic := '0';
+    signal mem_rw, cl : std_logic;
+    signal END_pc, END_barr : std_logic_vector(7 downto 0) := (others => '0');
     signal interface_barramento : std_logic_vector(7 downto 0);
 
     
@@ -31,19 +32,21 @@ begin
     begin
 
 -- Resetal
+        cl <= '0';
+        mem_rw <= '0';
         wait for 10 ns;
         clk <= '1';
         wait for 10 ns;
         clk <= '0';
         cl <= '1';
 
-        END_pc <= "11110000";
+        END_pc <= "11110111";
         END_barr <= "11111111";
 
-        barr_pc <= '1'
+        barr_pc <= '1';
         rem_rw <= '1';
         mem_rw <= '0';
-        rdm_rw <= '0';
+        rdm_rw <= '0';  
         
         wait for 10 ns;
         clk <= '1';
@@ -65,175 +68,8 @@ begin
         wait for 10 ns;
         clk <= '0';
         wait for 10 ns;
+        wait;
 
-
--- Reset( nice pratice)
-
-        clk <= '0';
-        wait for 10 ns;
-        clk <= '1';
-        wait for 10 ns;
-        cl <= '0';
-        clk <= '0';
-        wait for 10 ns;
-        clk <= '1';
-        cl <= '1';
-        wait for 10 ns;
-
-        -- 1
-
-        clk <= '0';
-
-        END_pc <= "11110000";
-        END_barr <= "11111111";
-
-	barr_pc <= '1';
-	rem_rw <= '1';
-        mem_rw <= '0';
-        rdm_rw <= '0';
-
-        wait for 10 ns;
-        -- 2
-
-        clk <= '1';
-
-        wait for 10 ns;
-        -- 3
-
-        clk <= '0';
-
-        rem_rw <= '0';
-        rdm_rw <= '1';
-
-        wait for 10 ns;
-        -- 4
-
-        clk <= '1';
-
-        wait for 10 ns;
-        -- 5
-
-        clk <= '0';
-
-        rdm_rw <= '0';
-	
-	wait for 10 ns;
-	-- 6
-	
-	clk <= '1';
-
-	wait for 10 ns;
-
--- proximo teste
-
-	clk <= '0';
-        wait for 10 ns;
-        clk <= '1';
-        wait for 10 ns;
-        cl <= '0';
-        clk <= '0';
-        wait for 10 ns;
-        clk <= '1';
-        cl <= '1';
-        wait for 10 ns;
-
-	-- 1
-
-        clk <= '0';
-
-
-	barr_pc <= '0';
-	rem_rw <= '1';
-        mem_rw <= '0';
-        rdm_rw <= '0';
-
-        wait for 10 ns;
-        -- 2
-
-        clk <= '1';
-
-        wait for 10 ns;
-        -- 3
-
-        clk <= '0';
-
-        rem_rw <= '0';
-        rdm_rw <= '1';
-
-        wait for 10 ns;
-        -- 4
-
-        clk <= '1';
-
-        wait for 10 ns;
-        -- 5
-
-        clk <= '0';
-
-        rdm_rw <= '0';
-	
-	wait for 10 ns;
-	-- 6
-	
-	clk <= '1';
-
-	wait for 10 ns;
-
--- proximo teste
-
-	clk <= '0';
-        wait for 10 ns;
-        clk <= '1';
-        wait for 10 ns;
-        cl <= '0';
-        clk <= '0';
-        wait for 10 ns;
-        clk <= '1';
-        cl <= '1';
-        wait for 10 ns;
-	-- 1
-
-	clk <= '0';
-
-	barr_pc <= '0';
-	rem_rw <= '1';
-        mem_rw <= '0';
-        rdm_rw <= '0';
-
-        wait for 10 ns;
-        -- 2
-
-        clk <= '1';
-
-        wait for 10 ns;
-        -- 3
-
-        clk <= '0';
-
-        rem_rw <= '0';
-        mem_rw <= '1';
-
-        wait for 10 ns;
-        -- 4
-
-        clk <= '1';
-
-        wait for 10 ns;
-        -- 5
-
-        clk <= '0';
-
-        mem_rw <= '0';
-	
-	wait for 10 ns;
-	-- 6
-	
-	clk <= '1';
-
-	wait for 10 ns;
-	
-
-wait for  10 ns;
 end process;
 
 

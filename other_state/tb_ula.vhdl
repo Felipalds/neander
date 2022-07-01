@@ -57,8 +57,8 @@ begin
 
     -- LDA
     ula_op <= "000";
-    ac_nrw <= '1';
-    mem_nrw <= '0';
+    ac_rw <= '1';
+    mem_rw <= '0';
     barramento <= "01010100";
 
 	clk <= '0';
@@ -66,7 +66,7 @@ begin
 	clk <= '1';
 	wait for 10 ns;
 
-    ac_nrw <= '0';
+    ac_rw <= '0';
     clk <= '0';
 	wait for 10 ns;
 	clk <= '1';
@@ -75,13 +75,13 @@ begin
     -- ADD
     ula_op <= "001";
     barramento <= "00000001";
-    ac_nrw <= '1';
+    ac_rw <= '1';
     clk <= '0';
     wait for 10 ns;
 	clk <= '1';
 	wait for 10 ns;
 
-    ac_nrw <= '0';
+    ac_rw <= '0';
     clk <= '0';
     wait for 10 ns;
 	clk <= '1';
@@ -89,7 +89,7 @@ begin
 
 
     -- OR
-    ac_nrw <= '1';
+    ac_rw <= '1';
     ula_op <= "010";
     barramento <= "00000010";
     clk <= '0';
@@ -97,14 +97,14 @@ begin
 	clk <= '1';
 	wait for 10 ns;
 
-    ac_nrw <= '0';
+    ac_rw <= '0';
     clk <= '0';
     wait for 10 ns;
 	clk <= '1';
 	wait for 10 ns;
 
     -- AND
-    ac_nrw <= '1';
+    ac_rw <= '1';
     ula_op <= "011";
     barramento <= "01010100";
     clk <= '0';
@@ -112,28 +112,28 @@ begin
 	clk <= '1';
 	wait for 10 ns;
 
-    ac_nrw <= '0';
+    ac_rw <= '0';
     clk <= '0';
     wait for 10 ns;
 	clk <= '1';
 	wait for 10 ns;
 
     -- not
-    ac_nrw <= '1';
+    ac_rw <= '1';
     ula_op <= "100";
     clk <= '0';
     wait for 10 ns;
 	clk <= '1';
 	wait for 10 ns;
 
-    ac_nrw <= '0';
+    ac_rw <= '0';
     clk <= '0';
     wait for 10 ns;
 	clk <= '1';
 	wait for 10 ns;
 
     -- flags
-    ac_nrw <= '1';
+    ac_rw <= '1';
     ula_op <= "011";
     barramento <= "00000000";
     clk <= '0';
@@ -141,13 +141,13 @@ begin
 	clk <= '1';
 	wait for 10 ns;
 
-    ac_nrw <= '0';
+    ac_rw <= '0';
     clk <= '0';
     wait for 10 ns;
 	clk <= '1';
 	wait for 10 ns;
     
-    ac_nrw <= '0';
+    ac_rw <= '0';
     clk <= '0';
     wait for 10 ns;
 	clk <= '1';
