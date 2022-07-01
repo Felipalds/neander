@@ -14,8 +14,8 @@ architecture rogerio of tb_ula is
 
             -- controle
             rst, clk : in std_logic;
-            ac_nrw : in std_logic;
-            mem_nrw: in std_logic;
+            ac_rw : in std_logic;
+            mem_rw: in std_logic;
             ula_op : in std_logic_vector(2 downto 0);
 
             -- status
@@ -25,13 +25,13 @@ architecture rogerio of tb_ula is
     signal barramento : std_logic_vector(7 downto 0);
     signal clk : std_logic := '1';
     signal rst : std_logic := '0';
-    signal ac_nrw : std_logic := '0'; 
-    signal mem_nrw : std_logic;
+    signal ac_rw : std_logic := '0'; 
+    signal mem_rw : std_logic;
     signal ula_op : std_logic_vector(2 downto 0);
     signal intFlags : std_logic_vector(1 downto 0);
 
 begin
-    u_ula : ula port map(barramento, rst, clk, ac_nrw, mem_nrw, ula_op, intFlags);
+    u_ula : ula port map(barramento, rst, clk, ac_rw, mem_rw, ula_op, intFlags);
     --p_clk : process
     --begin
         --clk <= not(clk);
