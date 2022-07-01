@@ -30,6 +30,43 @@ begin
     p_main : process
     begin
 
+-- Resetal
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+        cl <= '1';
+
+        END_pc <= "11110000";
+        END_barr <= "11111111";
+
+        barr_pc <= '1'
+        rem_rw <= '1';
+        mem_rw <= '0';
+        rdm_rw <= '0';
+        
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+
+        rem_rw <= '0';
+        rdm_rw <= '1';
+        wait for 10 ns;
+
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+
+        rdm_rw <= '0';
+        wait for 10 ns;
+
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+        wait for 10 ns;
+
+
 -- Reset( nice pratice)
 
         clk <= '0';
