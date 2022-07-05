@@ -5,23 +5,26 @@ entity tb_ulaalu is
 end entity;
 
 architecture banana of tb_ulaalu is
+
+    -- Components --
+
     component ulaalu is
         port (
-            -- dados
-            x, y : in std_logic_vector(7 downto 0);
+            x, y : in std_logic_vector(7 downto 0); -- Data
             s: out std_logic_vector(7 downto 0);
 
-            -- controle
-            ula_op : in std_logic_vector(2 downto 0);
+            ula_op : in std_logic_vector(2 downto 0); -- Control
 
-            -- status
-            flagsNZ: out std_logic_vector(1 downto 0)
+            flagsNZ: out std_logic_vector(1 downto 0) -- Flags/Status
         );
     end component;
+
+    -- Signals --
 
     signal x, y, s : std_logic_vector(7 downto 0);
     signal ula_op : std_logic_vector(2 downto 0);
     signal flagsNZ : std_logic_vector(1 downto 0);
+
 begin
     u_ulaalu : ulaalu port map(x, y, s, ula_op, flagsNZ);
     p_ulaalu : process

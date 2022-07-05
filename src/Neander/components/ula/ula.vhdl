@@ -4,17 +4,14 @@ use ieee.std_logic_1164.all;
 
 entity ula is
     port (
-        -- dados
-        barramento : inout std_logic_vector(7 downto 0);
+        barramento : inout std_logic_vector(7 downto 0); -- Data
 
-        -- controle
-        rst, clk : in std_logic;
+        rst, clk : in std_logic; -- Control
         ac_rw : in std_logic;
         mem_rw: in std_logic;
         ula_op : in std_logic_vector(2 downto 0);
 
-        -- status
-        intFlags : out std_logic_vector(1 downto 0)
+        intFlags : out std_logic_vector(1 downto 0) -- Flags/Status
     );
 
 
