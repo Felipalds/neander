@@ -17,7 +17,9 @@ end entity;
 
 architecture george of memory is
 
-    component mux2x8 is
+    -- Components --
+
+    component mux2x8 is -- Mux for END_PC and END_BARR
         port(
             mbar : in std_logic_vector(7 downto 0);
             mpc : in std_logic_vector(7 downto 0);
@@ -26,7 +28,7 @@ architecture george of memory is
         );
     end component;
 
-    component regCarga8bit is
+    component regCarga8bit is -- Registers for REM and RDM
         port(
             d      : in  std_logic_vector(7 downto 0);
             clock  : in  std_logic;
@@ -36,7 +38,7 @@ architecture george of memory is
 	    );
     end component;
 
-    component as_ram is
+    component as_ram is -- Internal Static Memory
         port(
             addr  : in    std_logic_vector(7 downto 0);
             data  : inout std_logic_vector(7 downto 0);
@@ -44,6 +46,8 @@ architecture george of memory is
             reset : in    std_logic
         );
     end component;
+
+    -- Signals --
 
     signal s_rdm2barr : std_logic_vector(7 downto 0);
     signal s_rem2mem : std_logic_vector(7 downto 0);
