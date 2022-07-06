@@ -1,0 +1,39 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Fri Jul  1 13:03:39 2022
+[*]
+[dumpfile] "/home/pedro-zoz/Materiais/SD/neander/sim/test_tb_mem2ula.ghw"
+[dumpfile_mtime] "Fri Jul  1 12:56:34 2022"
+[dumpfile_size] 22103
+[savefile] "/home/pedro-zoz/Materiais/SD/neander/assets/save_files/test_mem2ula_LDA.gtkw"
+[timestart] 0
+[size] 1920 1017
+[pos] -1 -416
+*-25.354618 101000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.tb_mem2ula.
+[treeopen] top.tb_mem2ula.u_memory.
+[treeopen] top.tb_mem2ula.u_ula.
+[sst_width] 259
+[signals_width] 284
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+top.tb_mem2ula.clk
+top.tb_mem2ula.barr_pc
+top.tb_mem2ula.rem_rw
+top.tb_mem2ula.rdm_rw
+top.tb_mem2ula.mem_rw
+#{top.tb_mem2ula.u_memory.s_mux2rem[7:0]} top.tb_mem2ula.u_memory.s_mux2rem[7] top.tb_mem2ula.u_memory.s_mux2rem[6] top.tb_mem2ula.u_memory.s_mux2rem[5] top.tb_mem2ula.u_memory.s_mux2rem[4] top.tb_mem2ula.u_memory.s_mux2rem[3] top.tb_mem2ula.u_memory.s_mux2rem[2] top.tb_mem2ula.u_memory.s_mux2rem[1] top.tb_mem2ula.u_memory.s_mux2rem[0]
+#{top.tb_mem2ula.u_memory.s_rem2mem[7:0]} top.tb_mem2ula.u_memory.s_rem2mem[7] top.tb_mem2ula.u_memory.s_rem2mem[6] top.tb_mem2ula.u_memory.s_rem2mem[5] top.tb_mem2ula.u_memory.s_rem2mem[4] top.tb_mem2ula.u_memory.s_rem2mem[3] top.tb_mem2ula.u_memory.s_rem2mem[2] top.tb_mem2ula.u_memory.s_rem2mem[1] top.tb_mem2ula.u_memory.s_rem2mem[0]
+#{top.tb_mem2ula.u_memory.s_mem2rdm[7:0]} top.tb_mem2ula.u_memory.s_mem2rdm[7] top.tb_mem2ula.u_memory.s_mem2rdm[6] top.tb_mem2ula.u_memory.s_mem2rdm[5] top.tb_mem2ula.u_memory.s_mem2rdm[4] top.tb_mem2ula.u_memory.s_mem2rdm[3] top.tb_mem2ula.u_memory.s_mem2rdm[2] top.tb_mem2ula.u_memory.s_mem2rdm[1] top.tb_mem2ula.u_memory.s_mem2rdm[0]
+#{top.tb_mem2ula.interface_barramento[7:0]} top.tb_mem2ula.interface_barramento[7] top.tb_mem2ula.interface_barramento[6] top.tb_mem2ula.interface_barramento[5] top.tb_mem2ula.interface_barramento[4] top.tb_mem2ula.interface_barramento[3] top.tb_mem2ula.interface_barramento[2] top.tb_mem2ula.interface_barramento[1] top.tb_mem2ula.interface_barramento[0]
+top.tb_mem2ula.u_ula.ac_rw
+#{top.tb_mem2ula.u_ula.s_ac2flags[1:0]} top.tb_mem2ula.u_ula.s_ac2flags[1] top.tb_mem2ula.u_ula.s_ac2flags[0]
+@22
+#{top.tb_mem2ula.u_ula.s_ula2ac[7:0]} top.tb_mem2ula.u_ula.s_ula2ac[7] top.tb_mem2ula.u_ula.s_ula2ac[6] top.tb_mem2ula.u_ula.s_ula2ac[5] top.tb_mem2ula.u_ula.s_ula2ac[4] top.tb_mem2ula.u_ula.s_ula2ac[3] top.tb_mem2ula.u_ula.s_ula2ac[2] top.tb_mem2ula.u_ula.s_ula2ac[1] top.tb_mem2ula.u_ula.s_ula2ac[0]
+#{top.tb_mem2ula.u_ula.s_ac2ula[7:0]} top.tb_mem2ula.u_ula.s_ac2ula[7] top.tb_mem2ula.u_ula.s_ac2ula[6] top.tb_mem2ula.u_ula.s_ac2ula[5] top.tb_mem2ula.u_ula.s_ac2ula[4] top.tb_mem2ula.u_ula.s_ac2ula[3] top.tb_mem2ula.u_ula.s_ac2ula[2] top.tb_mem2ula.u_ula.s_ac2ula[1] top.tb_mem2ula.u_ula.s_ac2ula[0]
+@29
+#{top.tb_mem2ula.ula_op[2:0]} top.tb_mem2ula.ula_op[2] top.tb_mem2ula.ula_op[1] top.tb_mem2ula.ula_op[0]
+[pattern_trace] 1
+[pattern_trace] 0

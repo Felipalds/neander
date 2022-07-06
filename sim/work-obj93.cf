@@ -1,0 +1,70 @@
+v 4
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/tb_memory.vhdl" "ef3a26ccc94a4c3e55f95b59ddb72e787a3c0787" "20220701140052.258":
+  entity tb_memory at 1( 0) + 0 on 599;
+  architecture zaz of tb_memory at 7( 77) + 0 on 600;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/tb_as_ram.vhdl" "bfefe731229ad8ce9415f071d736bf321b0ab039" "20220701140052.257":
+  entity tb_as_ram at 1( 0) + 0 on 595;
+  architecture tb_behavior of tb_as_ram at 9( 126) + 0 on 596;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/ANDmod.vhdl" "e50dff938cba3e69e3a00915144299af87868432" "20220701140052.250":
+  entity andmod at 1( 0) + 0 on 565;
+  architecture comuta of andmod at 12( 222) + 0 on 566;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/ORmod.vhdl" "b8283a5f2e50fed4c5cd0b4f693e238bfdcdea6c" "20220701140052.252":
+  entity ormod at 1( 0) + 0 on 573;
+  architecture comuta of ormod at 12( 220) + 0 on 574;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/NOTmod.vhdl" "e90d8f1bedac989c857754d6b6cf47cd97ae954a" "20220701140052.251":
+  entity notmod at 1( 0) + 0 on 571;
+  architecture comuta of notmod at 11( 177) + 0 on 572;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/ulaalu.vhdl" "069b6b3c7c397ca24bdaef4d686ce1099419cedb" "20220701140052.260":
+  entity ulaalu at 2( 15) + 0 on 607;
+  architecture super_calculator of ulaalu at 20( 358) + 0 on 608;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/regCarga2bit.vhdl" "49b76756429ac8314fd90cd747c93dbbf24063ff" "20220701140052.256":
+  entity regcarga2bit at 1( 0) + 0 on 591;
+  architecture reg2bit of regcarga2bit at 14( 270) + 0 on 592;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/tb_ula.vhdl" "21a3cf587b4817a54f429b74c483e711390276f8" "20220701140052.259":
+  entity tb_ula at 1( 0) + 0 on 601;
+  architecture rogerio of tb_ula at 7( 74) + 0 on 602;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/tb_mem2ula.vhdl" "15c94b7ceda978db0a68525c2cdade9b5afa904e" "20220701140052.258":
+  entity tb_mem2ula at 1( 0) + 0 on 597;
+  architecture moteldogarzon of tb_mem2ula at 7( 78) + 0 on 598;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/regCarga8bit.vhdl" "a9e011fd5fe316356aeff805ca20253bafa2a683" "20220701140052.257":
+  entity regcarga8bit at 1( 0) + 0 on 593;
+  architecture reg1bit of regcarga8bit at 14( 270) + 0 on 594;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/FFD.vhdl" "23bf764b8c32ff789a871977b3736a22df8387d5" "20220701140052.251":
+  entity ffd at 1( 0) + 0 on 567;
+  architecture ff of ffd at 13( 182) + 0 on 568;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/mux2x1.vhdl" "18ee76e5afaea3914efbafad72a1450274ce37bc" "20220701140052.255":
+  entity mux2x1 at 1( 0) + 0 on 581;
+  architecture bhvr of mux2x1 at 13( 186) + 0 on 582;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/FFJK.vhdl" "90a92bcaa8e58c254ccc1efc34a749061c7a66e0" "20220701140052.251":
+  entity ffjk at 1( 0) + 0 on 569;
+  architecture ff of ffjk at 13( 184) + 0 on 570;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/regCarga1bit.vhdl" "c2b1467db0f8cb86075d80342d85badd65e03e92" "20220701140052.256":
+  entity regcarga1bit at 1( 0) + 0 on 589;
+  architecture reg1bit of regcarga1bit at 14( 223) + 0 on 590;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/neander.vhdl" "90f52fbbc32a086eeaba1774c0207620468d19dc" "20220701140052.256":
+  entity neander at 1( 0) + 0 on 587;
+  architecture cha_mate of neander at 10( 123) + 0 on 588;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/ula.vhdl" "56a8008ad38ca8ba402e3380df65487cf3b9904e" "20220701140052.260":
+  entity ula at 2( 15) + 0 on 605;
+  architecture calculator of ula at 23( 415) + 0 on 606;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/tb_ulaalu.vhdl" "6743b6b65d97a3dde1ec40e1c269911ab32c76ec" "20220701140052.259":
+  entity tb_ulaalu at 1( 0) + 0 on 603;
+  architecture banana of tb_ulaalu at 7( 77) + 0 on 604;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/ADDmod.vhdl" "fe5770b4715730b8c16d6c7668e9437eb220a1bf" "20220701140052.250":
+  entity addmod at 1( 0) + 0 on 563;
+  architecture comuta of addmod at 14( 256) + 0 on 564;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/mux5x8.vhdl" "13a44eb72089a52c6b3c3d3d5ed8550f75cd8fac" "20220701140052.255":
+  entity mux5x8 at 1( 0) + 0 on 585;
+  architecture jorge of mux5x8 at 16( 392) + 0 on 586;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/f_ADDER.vhdl" "d91313bfb7270e44cee463604ea3b271f67f3723" "20220701140052.254":
+  entity f_adder at 1( 0) + 0 on 577;
+  architecture comuta of f_adder at 14( 185) + 0 on 578;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/as_ram.vhdl" "3f73ba77f28abe495e9836860db5e4964f04d021" "20220701140052.254":
+  entity as_ram at 2( 42) + 0 on 575;
+  architecture behavior of as_ram at 16( 325) + 0 on 576;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/memory.vhdl" "9515e2ba480532c23d57ca6b3cb131e97a02ddae" "20220701140052.254":
+  entity memory at 1( 0) + 0 on 579;
+  architecture george of memory at 18( 414) + 0 on 580;
+file / "/home/pedro-zoz/Materiais/SD/neander/sim/mux2x8.vhdl" "67d3fc69d4d70eb0db45124d106e36f84ea6afe3" "20220701140052.255":
+  entity mux2x8 at 1( 0) + 0 on 583;
+  architecture roger of mux2x8 at 13( 260) + 0 on 584;
