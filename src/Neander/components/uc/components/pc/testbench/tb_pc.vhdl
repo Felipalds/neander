@@ -35,32 +35,32 @@ begin
         wait for 10 ns;
         clk <= '1';
         wait for 10 ns;
-	clk <= '0';
-	cl <= '1';
-	wait for 10 ns;
+        clk <= '0';
+        cl <= '1';
 
-        -- Teste
-	
-	clk <= '0';
-	barr <= "00000001";
-	nbarrinc <= '0';
-	rw <= '1';
-	wait for 10 ns;
-	clk <= '1';
-	wait for 10 ns;
-	clk <= '0';
-	wait for 10 ns;
-	clk <= '1';
-	wait for 10 ns;
-	clk <= '0';
-	nbarrinc <= '1';
-	wait for 10 ns;
-	clk <= '1';
-	wait for 10 ns;
-	clk <= '0';
-	nbarrinc <= '0';
-	rw <= '0';
-	wait for 10 ns;
+            -- Teste
+        
+        barr <= "00000001";
+        nbarrinc <= '0';
+        rw <= '1';
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+        rw <= '0';
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+        rw <= '1';
+        nbarrinc <= '1';
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+        nbarrinc <= '0';
+        rw <= '0';
+        wait for 10 ns;
 
         wait;
     end process;
