@@ -74,7 +74,7 @@ begin
                 "00000000100" when s_ri2dec = "10010000" else
                 "00000000010" when s_ri2dec = "10100000" else
                 "00000000001" when s_ri2dec = "11110000" else
-                (others <= 'Z');
+                (others => 'Z');
 
 
     s_endPC2MEM <= s_PCatual;
