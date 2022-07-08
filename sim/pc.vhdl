@@ -56,8 +56,8 @@ architecture brigadeiros of pc is
 begin
 
     u_ADD : ADDmod port map("00000001", s_PCatual, c_in, sadd, c_out);
-    u_mux2x8 : mux2x8 port map(barr, sadd, nbarrinc, s_mux2pc);
-    u_PCreg : regCarga8bit port map(s_mux2pc, clk, '1', cl, rw, s_PCatual);
+    u_mux2x8 : mux2x8 port map(sadd, barr, nbarrinc, s_mux2pc);
+    u_PC : regCarga8bit port map(s_mux2pc, clk, '1', cl, rw, s_PCatual);
 
     s_endPC2MEM <= s_PCatual;
 end architecture;
