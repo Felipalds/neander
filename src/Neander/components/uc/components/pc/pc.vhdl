@@ -6,7 +6,7 @@ entity pc is
         clk, cl : in std_logic;
         nbarrinc : in std_logic;
         barr : in std_logic_vector(7 downto 0);
-        rw : in std_logic;
+        pc_rw : in std_logic;
         s_endPC2MEM : out std_logic_vector(7 downto 0);
         s_rirw: in std_logic;
         s_dec2uc : out std_logic_vector(10 downto 0)
@@ -60,7 +60,7 @@ begin
 
     u_ADD : ADDmod port map("00000001", s_PCatual, '0', sadd, c_out);
     u_mux2x8 : mux2x8 port map(barr, sadd, nbarrinc, s_mux2pc);
-    u_PCreg : regCarga8bit port map(s_mux2pc, clk, '1', cl, rw, s_PCatual);
+    u_PCreg : regCarga8bit port map(s_mux2pc, clk, '1', cl, pc_rw, s_PCatual);
 
     u_RI : regCarga8bit port map(barr, clk, '1', cl, s_rirw, s_ri2dec);
 
