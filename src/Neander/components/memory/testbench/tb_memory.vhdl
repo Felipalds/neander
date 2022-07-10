@@ -6,6 +6,7 @@ end entity;
 
 architecture zaz of tb_memory is
     -- Components --
+
     
     component memory is -- Memory Module
         port(
@@ -32,72 +33,97 @@ begin
     p_main : process
     begin
 
-        -- Initial Reset
+        -- Initial Reset --
 
         cl <= '0';
         mem_rw <= '0';
         wait for 10 ns;
         clk <= '1';
-        wait for 10 ns;
+        wait for 10 ns; -- Clock 1
         clk <= '0';
-        cl <= '1';
 
-        -- Instruction-Read Test
+        cl <= '1'; -- End of Reset
 
-        END_pc <= "11110111";
-        END_barr <= "11111111";
+        -- Process 1 - I.R "0000 0000"
 
+        END_pc <= "00000000"; -- Mux
         barr_pc <= '1';
-        rem_rw <= '1';
-        mem_rw <= '0';
-        rdm_rw <= '0';  
+        rem_rw <= '1'; -- REM
+
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns; -- Clock 2
+        clk <= '0';
+
+        rem_rw <= '0'; -- REM
+        rdm_rw <= '1'; -- RDM
         
         wait for 10 ns;
         clk <= '1';
+        wait for 10 ns; -- Clock 3
+        clk <= '0'; 
+
+        -- Process 2 - D.W 180 -> "0000 0000"
+
+        END_barr <= "10110100"; -- Mux -> 180
+        barr_pc <= '0';
+        rem_rw <= '1'; -- REM
+        rdm_rw <= '0'; -- RDM
+
         wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns; -- Clock 4
+        clk <= '0'; 
+
+        rem_rw <= '0'; -- REM
+        mem_rw <= '1'; -- Memory
+        
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns; -- Clock 5
         clk <= '0';
+
+        mem_rw <= '0';
+
+        -- Process 3 - I.R "0000 0001"
+
+        END_pc <= "00000001"; -- Mux
+        barr_pc <= '1';
+        rem_rw <= '1'; -- REM
+        rdm_rw <= '0'; -- RDM
+
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns; -- Clock 6
+        clk <= '0'; 
 
         rem_rw <= '0';
         rdm_rw <= '1';
-        wait for 10 ns;
 
+        wait for 10 ns;
         clk <= '1';
-        wait for 10 ns;
-        clk <= '0';
+        wait for 10 ns; -- Clock 7
+        clk <= '0'; 
 
-        rdm_rw <= '0';
-        wait for 10 ns;
+        -- Process 4 - I.R "0000 0000"
 
+        END_pc <= "00000000"; -- Mux
+        rem_rw <= '1'; -- REM
+        rdm_rw <= '0'; -- RDM
+
+        wait for 10 ns;
         clk <= '1';
+        wait for 10 ns; -- Clock 8
+        clk <= '0'; 
+
+        rem_rw <= '0';
+        rdm_rw <= '1';
+
         wait for 10 ns;
-        clk <= '0';
-        wait for 10 ns;
-        wait;
-
-end process;
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        clk <= '1';
+        wait for 10 ns; -- Clock 9
+        clk <= '0';       
+        
+        wait; -- ?
+    end process;
 end architecture;

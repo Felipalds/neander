@@ -70,7 +70,7 @@ begin
         clk <= '1';
         wait for 10 ns;
         clk <= '0';
-        cl <= '1';
+        cl <= '1'; -- 20 ns
 
         -- Teste - (Memory / RI)
 
@@ -84,7 +84,7 @@ begin
         wait for 10 ns;
         clk <= '1';
         wait for 10 ns;
-        clk <= '0';
+        clk <= '0';    -- 40 ns
 
         -- sinais memoria
         barr_pc <= '1';

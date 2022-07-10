@@ -157,7 +157,7 @@ begin
         clk <= '1';
         wait for 10 ns;
 
-        -- Teste - (Memory / RI)
+        -- Teste - (Memory / DW)
 
         clk <= '0';
         wait for 10 ns;
