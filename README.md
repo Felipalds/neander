@@ -20,3 +20,15 @@ Final project of <b>Digital Systems</b> - a simple, theoric computer.
 ## Data Type
 - 1 int data (1 byte)
 - 2's complement
+
+## CU - control unity
+- automatization of Neander
+- need a counter
+- it is a combinational system!!!!!
+- all execute same time, decod says which will be the output
+- every time that you touch a registrator, it is a clock cycle
+- just increment PC after RdM
+- add or and not is the same with a mux controling ula op
+
+// no pc de verdade, acontece a busca com o endereço de memória da linguagem?
+// o valor das instruções tb vai para a ula?
