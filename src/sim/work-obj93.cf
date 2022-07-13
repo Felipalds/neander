@@ -1,16 +1,85 @@
 v 4
-file / "/home/luizfelipefonsecarosa/github/neander/src/sim/FFJK.vhdl" "90a92bcaa8e58c254ccc1efc34a749061c7a66e0" "20220708123603.388":
-  entity ffjk at 1( 0) + 0 on 33;
-  architecture ff of ffjk at 13( 184) + 0 on 34;
-file / "/home/luizfelipefonsecarosa/github/neander/src/sim/mux2x1.vhdl" "18ee76e5afaea3914efbafad72a1450274ce37bc" "20220708123603.389":
-  entity mux2x1 at 1( 0) + 0 on 35;
-  architecture bhvr of mux2x1 at 13( 186) + 0 on 36;
-file / "/home/luizfelipefonsecarosa/github/neander/src/sim/FFD.vhdl" "23bf764b8c32ff789a871977b3736a22df8387d5" "20220708123603.386":
-  entity ffd at 1( 0) + 0 on 31;
-  architecture ff of ffd at 13( 182) + 0 on 32;
-file / "/home/luizfelipefonsecarosa/github/neander/src/sim/regCarga8bit.vhdl" "a9e011fd5fe316356aeff805ca20253bafa2a683" "20220708123603.391":
-  entity regcarga8bit at 1( 0) + 0 on 39;
-  architecture reg1bit of regcarga8bit at 14( 270) + 0 on 40;
-file / "/home/luizfelipefonsecarosa/github/neander/src/sim/regCarga1bit.vhdl" "c2b1467db0f8cb86075d80342d85badd65e03e92" "20220708123603.390":
-  entity regcarga1bit at 1( 0) + 0 on 37;
-  architecture reg1bit of regcarga1bit at 14( 223) + 0 on 38;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/mux5x8.vhdl" "13a44eb72089a52c6b3c3d3d5ed8550f75cd8fac" "20220713121507.136":
+  entity mux5x8 at 1( 0) + 0 on 847;
+  architecture jorge of mux5x8 at 16( 392) + 0 on 848;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/NOTmod.vhdl" "e90d8f1bedac989c857754d6b6cf47cd97ae954a" "20220713121507.127":
+  entity notmod at 1( 0) + 0 on 831;
+  architecture comuta of notmod at 11( 177) + 0 on 832;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/ANDmod.vhdl" "e50dff938cba3e69e3a00915144299af87868432" "20220713121507.125":
+  entity andmod at 1( 0) + 0 on 825;
+  architecture comuta of andmod at 12( 222) + 0 on 826;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/ulaalu.vhdl" "9e2250c9748faeb908863fc85ab4b210905281c0" "20220713121507.151":
+  entity ulaalu at 2( 15) + 0 on 877;
+  architecture super_calculator of ulaalu at 16( 337) + 0 on 878;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/tb_ula.vhdl" "21a3cf587b4817a54f429b74c483e711390276f8" "20220713121507.148":
+  entity tb_ula at 1( 0) + 0 on 869;
+  architecture rogerio of tb_ula at 7( 74) + 0 on 870;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/decoder.vhdl" "56cd534e6aeb58b948d09605fefe5c4aa73f627d" "20220713121507.133":
+  entity decoder at 1( 0) + 0 on 837;
+  architecture minipizzas of decoder at 9( 55) + 0 on 838;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/pc.vhdl" "77d24b745e4f826aaf75a63c872d23ef74b08d6b" "20220713121507.138":
+  entity pc at 1( 0) + 0 on 851;
+  architecture brigadeiros of pc at 16( 369) + 0 on 852;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/mux2x8.vhdl" "67d3fc69d4d70eb0db45124d106e36f84ea6afe3" "20220713121507.135":
+  entity mux2x8 at 1( 0) + 0 on 845;
+  architecture roger of mux2x8 at 13( 260) + 0 on 846;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/as_ram.vhdl" "3f73ba77f28abe495e9836860db5e4964f04d021" "20220713121507.132":
+  entity as_ram at 2( 42) + 0 on 835;
+  architecture behavior of as_ram at 16( 325) + 0 on 836;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/tb_memory.vhdl" "30f603b2399d2a3e238df06bf415e65bf3968128" "20220713121507.146":
+  entity tb_memory at 1( 0) + 0 on 865;
+  architecture zaz of tb_memory at 7( 77) + 0 on 866;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/tb_mem2ula.vhdl" "d97497c8463edf14d3dfd1b5cae159e5b333246b" "20220713121507.145":
+  entity tb_mem2ula at 1( 0) + 0 on 863;
+  architecture nomesseriosporfavor of tb_mem2ula at 7( 78) + 0 on 864;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/FFJK.vhdl" "90a92bcaa8e58c254ccc1efc34a749061c7a66e0" "20220713121507.127":
+  entity ffjk at 1( 0) + 0 on 829;
+  architecture ff of ffjk at 13( 184) + 0 on 830;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/mux2x1.vhdl" "18ee76e5afaea3914efbafad72a1450274ce37bc" "20220713121507.135":
+  entity mux2x1 at 1( 0) + 0 on 843;
+  architecture bhvr of mux2x1 at 13( 186) + 0 on 844;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/FFD.vhdl" "23bf764b8c32ff789a871977b3736a22df8387d5" "20220713121507.126":
+  entity ffd at 1( 0) + 0 on 827;
+  architecture ff of ffd at 13( 182) + 0 on 828;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/regCarga8bit.vhdl" "a9e011fd5fe316356aeff805ca20253bafa2a683" "20220713121507.140":
+  entity regcarga8bit at 1( 0) + 0 on 857;
+  architecture reg1bit of regcarga8bit at 14( 270) + 0 on 858;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/regCarga1bit.vhdl" "c2b1467db0f8cb86075d80342d85badd65e03e92" "20220713121507.139":
+  entity regcarga1bit at 1( 0) + 0 on 853;
+  architecture reg1bit of regcarga1bit at 14( 223) + 0 on 854;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/tb_allpc.vhdl" "b36c30935f692c7920668ccdce4cf1bcf0aff0e4" "20220713121507.142":
+  entity tb_allpc at 1( 0) + 0 on 859;
+  architecture nomeschads of tb_allpc at 7( 76) + 0 on 860;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/neander.vhdl" "90f52fbbc32a086eeaba1774c0207620468d19dc" "20220713121507.137":
+  entity neander at 1( 0) + 0 on 849;
+  architecture cha_mate of neander at 10( 123) + 0 on 850;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/memory.vhdl" "a5ffc531a3668b665c34c8682ec2e416f53c9460" "20220713121507.134":
+  entity memory at 1( 0) + 0 on 841;
+  architecture george of memory at 18( 414) + 0 on 842;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/tb_as_ram.vhdl" "bfefe731229ad8ce9415f071d736bf321b0ab039" "20220713121507.143":
+  entity tb_as_ram at 1( 0) + 0 on 861;
+  architecture tb_behavior of tb_as_ram at 9( 126) + 0 on 862;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/tb_pc.vhdl" "6462e7ac0fa00f1ec6ba7d188d453a5862a01f41" "20220713121507.147":
+  entity tb_pc at 1( 0) + 0 on 867;
+  architecture chalaranja of tb_pc at 7( 73) + 0 on 868;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/uc_control.vhdl" "3e095e65ff6bb26b7885e8542d481ba0dd848b84" "20220713121507.149":
+  entity uc_control at 1( 0) + 0 on 873;
+  architecture hohoho_o_cacetinho of uc_control at 7( 56) + 0 on 874;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/ula.vhdl" "8851cb1c57a7de078aea2df809dad94b29bc518b" "20220713121507.150":
+  entity ula at 2( 15) + 0 on 875;
+  architecture calculator of ula at 20( 395) + 0 on 876;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/regCarga2bit.vhdl" "49b76756429ac8314fd90cd747c93dbbf24063ff" "20220713121507.140":
+  entity regcarga2bit at 1( 0) + 0 on 855;
+  architecture reg2bit of regcarga2bit at 14( 270) + 0 on 856;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/tb_ulaalu.vhdl" "9a537afce6981300879cc2e1762dcd782082f937" "20220713121507.149":
+  entity tb_ulaalu at 1( 0) + 0 on 871;
+  architecture banana of tb_ulaalu at 7( 77) + 0 on 872;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/f_ADDER.vhdl" "d91313bfb7270e44cee463604ea3b271f67f3723" "20220713121507.133":
+  entity f_adder at 1( 0) + 0 on 839;
+  architecture comuta of f_adder at 14( 185) + 0 on 840;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/ADDmod.vhdl" "fe5770b4715730b8c16d6c7668e9437eb220a1bf" "20220713121507.125":
+  entity addmod at 1( 0) + 0 on 823;
+  architecture comuta of addmod at 14( 256) + 0 on 824;
+file / "/home/luizfelipefonsecarosa/github/neander/src/sim/ORmod.vhdl" "b8283a5f2e50fed4c5cd0b4f693e238bfdcdea6c" "20220713121507.128":
+  entity ormod at 1( 0) + 0 on 833;
+  architecture comuta of ormod at 12( 220) + 0 on 834;

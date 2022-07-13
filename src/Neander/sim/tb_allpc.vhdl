@@ -48,8 +48,7 @@ architecture nomesChads of tb_allpc is
 
     -- Signals 
 
-    signal cl : std_logic := 'Z';
-    signal clk , barr_pc, REM_rw, rdm_rw, ac_rw, mem_rw, nbarrinc, pc_rw, s_rirw : std_logic := '0';
+    signal clk, cl, barr_pc, REM_rw, rdm_rw, ac_rw, mem_rw, nbarrinc, pc_rw, s_rirw : std_logic := '0';
     signal s_endPC2MEM, interface_barramento, END_pc, END_barr, barr : std_logic_vector(7 downto 0) := (others => '0');
     signal s_dec2uc : std_logic_vector(10 downto 0);
     signal intFlags : std_logic_vector(1 downto 0);
