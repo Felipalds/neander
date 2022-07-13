@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity tb_mem2ula is
 end entity;
 
-architecture motelDoGarzon of tb_mem2ula is
+architecture nomesSeriosPorFavor of tb_mem2ula is
     component memory is
         port(
             cl, clk: in std_logic;
@@ -157,7 +157,7 @@ begin
         clk <= '1';
         wait for 10 ns;
 
-        -- Teste - (Memory / RI)
+        -- Teste - (Memory / DW)
 
         clk <= '0';
         wait for 10 ns;

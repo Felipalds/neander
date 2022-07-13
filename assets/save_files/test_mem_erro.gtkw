@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Jul 10 20:53:12 2022
+[*]
+[dumpfile] "/home/pedro-zoz/Materiais/SD/neander/sim/test_tb_memory.ghw"
+[dumpfile_mtime] "Sun Jul 10 20:50:31 2022"
+[dumpfile_size] 18099
+[savefile] "/home/pedro-zoz/Materiais/SD/neander/assets/save_files/test_mem_erro.gtkw"
+[timestart] 0
+[size] 1920 1017
+[pos] -1 -1
+*-24.680338 180000000 20000000 60100000 100000000 140000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.tb_memory.
+[treeopen] top.tb_memory.u_memory.
+[sst_width] 259
+[signals_width] 265
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+top.tb_memory.clk
+@25
+#{top.tb_memory.end_pc[7:0]} top.tb_memory.end_pc[7] top.tb_memory.end_pc[6] top.tb_memory.end_pc[5] top.tb_memory.end_pc[4] top.tb_memory.end_pc[3] top.tb_memory.end_pc[2] top.tb_memory.end_pc[1] top.tb_memory.end_pc[0]
+#{top.tb_memory.end_barr[7:0]} top.tb_memory.end_barr[7] top.tb_memory.end_barr[6] top.tb_memory.end_barr[5] top.tb_memory.end_barr[4] top.tb_memory.end_barr[3] top.tb_memory.end_barr[2] top.tb_memory.end_barr[1] top.tb_memory.end_barr[0]
+#{top.tb_memory.u_memory.s_mux2rem[7:0]} top.tb_memory.u_memory.s_mux2rem[7] top.tb_memory.u_memory.s_mux2rem[6] top.tb_memory.u_memory.s_mux2rem[5] top.tb_memory.u_memory.s_mux2rem[4] top.tb_memory.u_memory.s_mux2rem[3] top.tb_memory.u_memory.s_mux2rem[2] top.tb_memory.u_memory.s_mux2rem[1] top.tb_memory.u_memory.s_mux2rem[0]
+#{top.tb_memory.u_memory.s_rem2mem[7:0]} top.tb_memory.u_memory.s_rem2mem[7] top.tb_memory.u_memory.s_rem2mem[6] top.tb_memory.u_memory.s_rem2mem[5] top.tb_memory.u_memory.s_rem2mem[4] top.tb_memory.u_memory.s_rem2mem[3] top.tb_memory.u_memory.s_rem2mem[2] top.tb_memory.u_memory.s_rem2mem[1] top.tb_memory.u_memory.s_rem2mem[0]
+#{top.tb_memory.u_memory.s_mem2rdm[7:0]} top.tb_memory.u_memory.s_mem2rdm[7] top.tb_memory.u_memory.s_mem2rdm[6] top.tb_memory.u_memory.s_mem2rdm[5] top.tb_memory.u_memory.s_mem2rdm[4] top.tb_memory.u_memory.s_mem2rdm[3] top.tb_memory.u_memory.s_mem2rdm[2] top.tb_memory.u_memory.s_mem2rdm[1] top.tb_memory.u_memory.s_mem2rdm[0]
+#{top.tb_memory.u_memory.s_rdm2barramento[7:0]} top.tb_memory.u_memory.s_rdm2barramento[7] top.tb_memory.u_memory.s_rdm2barramento[6] top.tb_memory.u_memory.s_rdm2barramento[5] top.tb_memory.u_memory.s_rdm2barramento[4] top.tb_memory.u_memory.s_rdm2barramento[3] top.tb_memory.u_memory.s_rdm2barramento[2] top.tb_memory.u_memory.s_rdm2barramento[1] top.tb_memory.u_memory.s_rdm2barramento[0]
+#{top.tb_memory.interface_barramento[7:0]} top.tb_memory.interface_barramento[7] top.tb_memory.interface_barramento[6] top.tb_memory.interface_barramento[5] top.tb_memory.interface_barramento[4] top.tb_memory.interface_barramento[3] top.tb_memory.interface_barramento[2] top.tb_memory.interface_barramento[1] top.tb_memory.interface_barramento[0]
+#{top.tb_memory.u_memory.u_memoria.ram[0][7:0]} top.tb_memory.u_memory.u_memoria.ram[0][7] top.tb_memory.u_memory.u_memoria.ram[0][6] top.tb_memory.u_memory.u_memoria.ram[0][5] top.tb_memory.u_memory.u_memoria.ram[0][4] top.tb_memory.u_memory.u_memoria.ram[0][3] top.tb_memory.u_memory.u_memoria.ram[0][2] top.tb_memory.u_memory.u_memoria.ram[0][1] top.tb_memory.u_memory.u_memoria.ram[0][0]
+#{top.tb_memory.u_memory.u_memoria.ram[1][7:0]} top.tb_memory.u_memory.u_memoria.ram[1][7] top.tb_memory.u_memory.u_memoria.ram[1][6] top.tb_memory.u_memory.u_memoria.ram[1][5] top.tb_memory.u_memory.u_memoria.ram[1][4] top.tb_memory.u_memory.u_memoria.ram[1][3] top.tb_memory.u_memory.u_memoria.ram[1][2] top.tb_memory.u_memory.u_memoria.ram[1][1] top.tb_memory.u_memory.u_memoria.ram[1][0]
+[pattern_trace] 1
+[pattern_trace] 0

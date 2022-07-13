@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Jul 13 12:19:28 2022
+[*]
+[dumpfile] "/home/luizfelipefonsecarosa/github/neander/src/sim/test_tb_allpc.ghw"
+[dumpfile_mtime] "Wed Jul 13 12:15:29 2022"
+[dumpfile_size] 29408
+[savefile] "/home/luizfelipefonsecarosa/github/neander/assets/save_files/test_allpc_LDA.gtkw"
+[timestart] 0
+[size] 1366 699
+[pos] -51 -51
+*-25.005569 140000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.tb_allpc.
+[treeopen] top.tb_allpc.u_memory.
+[sst_width] 221
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 178
+@28
+top.tb_allpc.cl
+top.tb_allpc.clk
+@25
+#{top.tb_allpc.u_memory.s_mem2rdm[7:0]} top.tb_allpc.u_memory.s_mem2rdm[7] top.tb_allpc.u_memory.s_mem2rdm[6] top.tb_allpc.u_memory.s_mem2rdm[5] top.tb_allpc.u_memory.s_mem2rdm[4] top.tb_allpc.u_memory.s_mem2rdm[3] top.tb_allpc.u_memory.s_mem2rdm[2] top.tb_allpc.u_memory.s_mem2rdm[1] top.tb_allpc.u_memory.s_mem2rdm[0]
+[pattern_trace] 1
+[pattern_trace] 0
