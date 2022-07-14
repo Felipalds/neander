@@ -30,7 +30,7 @@ begin
     barr_stuff(9)  <= not(counter(2)) or counter(1) or not(counter(0));
     barr_stuff(5)  <= not(counter(1)) and (counter(2) xor counter(0));
     barr_stuff(4)  <= not(counter(2)) and counter(1) and not(counter(0));
-    barr_stuff(3)  <= (counter(2) and counter(0)) or (not(counter(2)) and not(counter(1)) and counter(0));
+    barr_stuff(3)  <= (counter(2) and not(counter(0))) or (not(counter(2)) and not(counter(1)) and counter(0));
     barr_stuff(2)  <= (not(counter(1)) and (counter(2) xnor counter(0))) or (not(counter(2)) and counter(1) and counter(0));
     barr_stuff(1)  <= '0';
     barr_stuff(0)  <= counter(2) and counter(1) and counter(0);
