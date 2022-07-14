@@ -11,11 +11,11 @@ architecture test of tb_counter is
         port(
             clk: in std_logic;
             reset: in std_logic;
-            q: out std_logic_vector(3 downto 0)
+            q: out std_logic_vector(2 downto 0)
             );
     end component;
 
-    signal sq, snq : std_logic_vector(3 downto 0);
+    signal sq, snq : std_logic_vector(2 downto 0);
     signal sreset : std_logic;
     signal sclk : std_logic := '1';
 
