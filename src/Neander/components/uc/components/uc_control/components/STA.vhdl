@@ -13,7 +13,7 @@ architecture comute of STA is
 
 begin 
 
-    barr_stuff(10) <= '1';
+    barr_stuff(10) <= not(counter(2) and counter(1) and counter(0));
     barr_stuff(9)  <= not(counter(0)) or (not(counter(0)) and counter(2));
     barr_stuff(8)  <= '0';
     barr_stuff(7)  <= '0';
