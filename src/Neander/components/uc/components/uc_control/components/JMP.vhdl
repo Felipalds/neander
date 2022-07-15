@@ -15,15 +15,15 @@ begin
 
 
 
-    barr_stuff(10) <= (not(counter(2)) and not(counter(1))) or (not(counter(2)) and counter(1) and not(counter(0)));
-    barr_stuff(9)  <= not(counter(2));
+    barr_stuff(10) <= not(counter(2)) or (not(counter(1)) and not(counter(0)));
+    barr_stuff(9)  <= not(counter(2)) or (not(counter(1)) and not(counter(0)));
     barr_stuff(8)  <= '0';
     barr_stuff(7)  <= '0';
     barr_stuff(6)  <= '0';
     barr_stuff(5)  <= not(counter(1)) and counter(0);
-    barr_stuff(4)  <= not(counter(2)) and counter(1) and counter(0);
+    barr_stuff(4)  <= not(counter(2)) and counter(1) and not(counter(0));
     barr_stuff(3)  <= (not(counter(2)) and not(counter(1)) and counter(0)) or (counter(2) and not(counter(1)) and not(counter(0)));
-    barr_stuff(2)  <= (not(counter(2)) and not(counter(1)) and not(counter(0))) or (not(counter(2) and counter(1) and counter(0)));
+    barr_stuff(2)  <= (not(counter(2)) and not(counter(1)) and not(counter(0))) or (not(counter(2)) and counter(1) and counter(0));
     barr_stuff(1)  <= '0';
     barr_stuff(0)  <= '0';
 
