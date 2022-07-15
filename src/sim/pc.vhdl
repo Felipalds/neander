@@ -5,7 +5,7 @@ entity pc is
     port(
         clk, cl : in std_logic;
         nbarrinc : in std_logic;
-        barr : in std_logic_vector(7 downto 0);
+        barr : inout std_logic_vector(7 downto 0);
         pc_rw : in std_logic;
         s_endPC2MEM : out std_logic_vector(7 downto 0);
         s_rirw: in std_logic;
