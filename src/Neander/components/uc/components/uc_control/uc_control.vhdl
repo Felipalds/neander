@@ -77,10 +77,17 @@ architecture varusAp of uc_control is
         );
     end component;
 
+    component HLT is
+        port(
+            counter : in std_logic_vector(2 downto 0);
+            barr_stuff : out std_logic_vector(10 downto 0)
+        );
+    end component;
+
     -- Signals --
 
     signal s_counter : std_logic_vector (2 downto 0);
-    signal NOP_out, STA_out, LAAO_out, NOT_out : std_logic_vector(10 downto 0);
+    signal NOP_out, STA_out, LAAO_out, NOT_out, HLT_out : std_logic_vector(10 downto 0);
     
 begin
     u_counter : counter port map(clk, cl, s_counter);
@@ -88,13 +95,16 @@ begin
     u_STA : STA port map(s_counter, STA_out);
     u_LAAO : LAAO port map(dec2uc, s_counter, LAAO_out);
     u_NOT : NOTT port map(s_counter, NOT_out);
+    u_HLT : HLT port map(s_counter, HLT_out);
 
     barr_stuff <= NOP_out when dec2uc = "10000000000" else
     STA_out when dec2uc = "01000000000" else
     LAAO_out when dec2uc = "00100000000" or dec2uc = "00010000000" or dec2uc = "00001000000" or dec2uc = "00000100000" else
     NOT_out when dec2uc = "00000010000" else
+    HLT_out when dec2uc = "00000000001" else
     (others => 'Z');
 
+    
 
 
 end architecture;
