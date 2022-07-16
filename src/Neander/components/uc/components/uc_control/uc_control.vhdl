@@ -113,7 +113,7 @@ begin
     u_NOT : NOTT port map(s_counter, NOT_out);
     u_HLT : HLT port map(s_counter, HLT_out);
     u_JMP : JMP port map(s_counter, intFlags, JMP_out);
-    u_JNZ : JNZ port map(s_counter, JMP_out);
+    u_JNZ : JNZ port map(s_counter, JNZ_out);
 
     --matters <= intFlags(1) when dec2uc = "00000000100" else
     --matters <= intFlags(0) when dec2uc = "00000000010" else

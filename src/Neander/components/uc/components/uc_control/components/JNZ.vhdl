@@ -22,7 +22,7 @@ begin
     barr_stuff(5)  <= not(counter(2)) and counter(0);
     barr_stuff(4)  <= not(counter(2)) and counter(1) and not(counter(0));
     barr_stuff(3)  <= not(counter(2)) and not(counter(1)) and counter(0);
-    barr_stuff(2)  <= not(counter(2)) and not(counter(1)) and counter(0);
+    barr_stuff(2)  <= not(counter(2)) and not(counter(1)) and not(counter(0));
     barr_stuff(1)  <= '0';
     barr_stuff(0)  <= '0';
 
