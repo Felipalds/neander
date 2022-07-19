@@ -126,10 +126,16 @@ begin
     LAAO_out when dec2uc = "00100000000" or dec2uc = "00010000000" or dec2uc = "00001000000" or dec2uc = "00000100000" else
     NOT_out when dec2uc = "00000010000" else
     JMP_out when dec2uc = "00000001000" else
+
+    -- JN
     JMP_out when dec2uc = ("00000000100") and (intFlags = "10" or intFlags = "11") else    
-    JNZ_out when dec2uc = ("00000000100") and intFlags = "00" else    
+    JNZ_out when dec2uc = ("00000000100") and (intFlags = "00" or intFlags = "01") else 
+
+
+    --JZ
     JMP_out when dec2uc = ("00000000010") and (intFlags = "01" or intFlags = "11") else
-    JNZ_out when dec2uc = ("00000000010") and intFlags = "00" else
+    JNZ_out when dec2uc = ("00000000010") and (intFlags = "00" or intFlags = "10") else
+
     HLT_out when dec2uc = "00000000001" else
     (others => 'Z');
 
