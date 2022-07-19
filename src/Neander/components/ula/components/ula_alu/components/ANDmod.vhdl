@@ -12,5 +12,5 @@ end;
 architecture comuta of ANDmod is
 
 begin
-    sAND <= X and Y;
+    sAND(7 downto 0) <= X(7 downto 0) and Y(7 downto 0);
 end;
