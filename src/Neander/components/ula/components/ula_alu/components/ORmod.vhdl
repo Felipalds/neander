@@ -12,5 +12,6 @@ end;
 architecture comuta of ORmod is
 
 begin
-    sOR <= X or Y;
+    sOR(7 downto 0) <= X(7 downto 0) or Y(7 downto 0);
+
 end;

@@ -16,10 +16,10 @@ architecture comute of LAAO is
 
 begin
 
-    ula_op <= "000" when dec2uc = "00100000000" else
-    "001" when dec2uc = "00010000000" else
-    "011" when dec2uc = "00001000000" else
-    "010" when dec2uc = "01000100000" else
+    ula_op <= "000" when dec2uc = "00100000000" else --ok
+    "001" when dec2uc = "00010000000" else --ok
+    "010" when dec2uc = "00001000000" else
+    "011" when dec2uc = "00000100000" else
     (others => 'Z');
     
     barr_stuff(8) <= ula_op(2);
