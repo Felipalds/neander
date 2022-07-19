@@ -1,0 +1,106 @@
+v 4
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/tb_neander.vhdl" "46ed75e3959e86f93c101b36c623e783dcfc6c93" "20220715133503.009":
+  entity tb_neander at 1( 0) + 0 on 3311;
+  architecture monark of tb_neander at 7( 78) + 0 on 3312;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/tb_memory.vhdl" "30f603b2399d2a3e238df06bf415e65bf3968128" "20220715133503.009":
+  entity tb_memory at 1( 0) + 0 on 3309;
+  architecture zaz of tb_memory at 7( 77) + 0 on 3310;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/tb_as_ram.vhdl" "bfefe731229ad8ce9415f071d736bf321b0ab039" "20220715133503.007":
+  entity tb_as_ram at 1( 0) + 0 on 3303;
+  architecture tb_behavior of tb_as_ram at 9( 126) + 0 on 3304;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/mux2x8.vhdl" "67d3fc69d4d70eb0db45124d106e36f84ea6afe3" "20220715133503.004":
+  entity mux2x8 at 1( 0) + 0 on 3287;
+  architecture roger of mux2x8 at 13( 260) + 0 on 3288;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/ula.vhdl" "8851cb1c57a7de078aea2df809dad94b29bc518b" "20220715133503.011":
+  entity ula at 2( 15) + 0 on 3321;
+  architecture calculator of ula at 20( 395) + 0 on 3322;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/tb_ulaalu.vhdl" "9a537afce6981300879cc2e1762dcd782082f937" "20220715133503.011":
+  entity tb_ulaalu at 1( 0) + 0 on 3317;
+  architecture banana of tb_ulaalu at 7( 77) + 0 on 3318;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/NOTmod.vhdl" "e90d8f1bedac989c857754d6b6cf47cd97ae954a" "20220715133502.999":
+  entity notmod at 1( 0) + 0 on 3269;
+  architecture comuta of notmod at 11( 177) + 0 on 3270;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/mux5x8.vhdl" "13a44eb72089a52c6b3c3d3d5ed8550f75cd8fac" "20220715133503.004":
+  entity mux5x8 at 1( 0) + 0 on 3289;
+  architecture jorge of mux5x8 at 16( 392) + 0 on 3290;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/ADDmod.vhdl" "fe5770b4715730b8c16d6c7668e9437eb220a1bf" "20220715133502.997":
+  entity addmod at 1( 0) + 0 on 3257;
+  architecture comuta of addmod at 14( 256) + 0 on 3258;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/tb_pc.vhdl" "6462e7ac0fa00f1ec6ba7d188d453a5862a01f41" "20220715133503.010":
+  entity tb_pc at 1( 0) + 0 on 3313;
+  architecture chalaranja of tb_pc at 7( 73) + 0 on 3314;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/decoder.vhdl" "56cd534e6aeb58b948d09605fefe5c4aa73f627d" "20220715133503.002":
+  entity decoder at 1( 0) + 0 on 3279;
+  architecture minipizzas of decoder at 9( 55) + 0 on 3280;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/counter.vhdl" "97dfda6a64b7761e41524c65c05f69c662189f89" "20220715133503.002":
+  entity counter at 1( 0) + 0 on 3277;
+  architecture cont of counter at 12( 196) + 0 on 3278;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/STA.vhdl" "1904cf6984750af72c719efa95684d17f978de56" "20220715133502.999":
+  entity sta at 1( 0) + 0 on 3273;
+  architecture comute of sta at 12( 198) + 0 on 3274;
+file / "/home/pedro_zoz/workspace/college/sd/neander/neander/sim/counter.vhdl" "273a08db551825cd963019d3128078626feb2752" "20220714184152.235":
+  entity contador at 1( 0) + 0 on 875;
+  architecture cont of contador at 12( 197) + 0 on 876;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/FFD.vhdl" "23bf764b8c32ff789a871977b3736a22df8387d5" "20220715133502.997":
+  entity ffd at 1( 0) + 0 on 3261;
+  architecture ff of ffd at 13( 182) + 0 on 3262;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/FFJK.vhdl" "b4e2ee27ba6a26c2b6e660fb77b1ec0e373b3531" "20220715133502.998":
+  entity ffjk at 2( 70) + 0 on 3263;
+  architecture latch of ffjk at 14( 318) + 0 on 3264;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/NOP.vhdl" "4de434b652ed1c1b01214674a4d9e081f1f25108" "20220715133502.999":
+  entity nop at 1( 0) + 0 on 3267;
+  architecture comute of nop at 12( 198) + 0 on 3268;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/mux2x1.vhdl" "18ee76e5afaea3914efbafad72a1450274ce37bc" "20220715133503.004":
+  entity mux2x1 at 1( 0) + 0 on 3285;
+  architecture bhvr of mux2x1 at 13( 186) + 0 on 3286;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/neander.vhdl" "eeb95c55e044b57fb9c7da44b9711989d1a16633" "20220715133503.005":
+  entity neander at 1( 0) + 0 on 3291;
+  architecture cha_mate of neander at 23( 361) + 0 on 3292;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/regCarga1bit.vhdl" "c2b1467db0f8cb86075d80342d85badd65e03e92" "20220715133503.006":
+  entity regcarga1bit at 1( 0) + 0 on 3295;
+  architecture reg1bit of regcarga1bit at 14( 223) + 0 on 3296;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/regCarga8bit.vhdl" "a9e011fd5fe316356aeff805ca20253bafa2a683" "20220715133503.006":
+  entity regcarga8bit at 1( 0) + 0 on 3299;
+  architecture reg1bit of regcarga8bit at 14( 270) + 0 on 3300;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/uc_control.vhdl" "802d5513243d9b4dd2cbf12deaf25219808af78b" "20220715133503.011":
+  entity uc_control at 1( 0) + 0 on 3319;
+  architecture varusap of uc_control at 23( 582) + 0 on 3320;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/tb_counter.vhdl" "398741d55a2b880d8daf47c0e43c1d85ec86bd40" "20220715133503.008":
+  entity tb_counter at 1( 0) + 0 on 3305;
+  architecture test of tb_counter at 7( 82) + 0 on 3306;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/LAAO.vhdl" "14377d120486e74e75983fe6405bcb947756b7f5" "20220715133502.998":
+  entity laao at 1( 0) + 0 on 3265;
+  architecture comute of laao at 13( 254) + 0 on 3266;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/pc.vhdl" "86809beecb400dd757ab1ebe9392c40df53e4183" "20220715133503.005":
+  entity pc at 1( 0) + 0 on 3293;
+  architecture brigadeiros of pc at 16( 372) + 0 on 3294;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/ulaalu.vhdl" "9e2250c9748faeb908863fc85ab4b210905281c0" "20220715133503.012":
+  entity ulaalu at 2( 15) + 0 on 3323;
+  architecture super_calculator of ulaalu at 16( 337) + 0 on 3324;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/ANDmod.vhdl" "e50dff938cba3e69e3a00915144299af87868432" "20220715133502.997":
+  entity andmod at 1( 0) + 0 on 3259;
+  architecture comuta of andmod at 12( 222) + 0 on 3260;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/f_ADDER.vhdl" "d91313bfb7270e44cee463604ea3b271f67f3723" "20220715133503.003":
+  entity f_adder at 1( 0) + 0 on 3281;
+  architecture comuta of f_adder at 14( 185) + 0 on 3282;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/ORmod.vhdl" "b8283a5f2e50fed4c5cd0b4f693e238bfdcdea6c" "20220715133502.999":
+  entity ormod at 1( 0) + 0 on 3271;
+  architecture comuta of ormod at 12( 220) + 0 on 3272;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/regCarga2bit.vhdl" "49b76756429ac8314fd90cd747c93dbbf24063ff" "20220715133503.006":
+  entity regcarga2bit at 1( 0) + 0 on 3297;
+  architecture reg2bit of regcarga2bit at 14( 270) + 0 on 3298;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/tb_ula.vhdl" "21a3cf587b4817a54f429b74c483e711390276f8" "20220715133503.010":
+  entity tb_ula at 1( 0) + 0 on 3315;
+  architecture rogerio of tb_ula at 7( 74) + 0 on 3316;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/as_ram.vhdl" "3f73ba77f28abe495e9836860db5e4964f04d021" "20220715133503.002":
+  entity as_ram at 2( 42) + 0 on 3275;
+  architecture behavior of as_ram at 16( 325) + 0 on 3276;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/memory.vhdl" "a5ffc531a3668b665c34c8682ec2e416f53c9460" "20220715133503.003":
+  entity memory at 1( 0) + 0 on 3283;
+  architecture george of memory at 18( 414) + 0 on 3284;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/tb_mem2ula.vhdl" "d97497c8463edf14d3dfd1b5cae159e5b333246b" "20220715133503.008":
+  entity tb_mem2ula at 1( 0) + 0 on 3307;
+  architecture nomesseriosporfavor of tb_mem2ula at 7( 78) + 0 on 3308;
+file / "/home/phzoz/workspace/college/sd/vhdl/neander/sim/tb_allpc.vhdl" "b36c30935f692c7920668ccdce4cf1bcf0aff0e4" "20220715133503.007":
+  entity tb_allpc at 1( 0) + 0 on 3301;
+  architecture nomeschads of tb_allpc at 7( 76) + 0 on 3302;

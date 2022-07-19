@@ -5,7 +5,7 @@ entity pc is
     port(
         clk, cl : in std_logic;
         nbarrinc : in std_logic;
-        barr : in std_logic_vector(7 downto 0);
+        barr : inout std_logic_vector(7 downto 0);
         pc_rw : in std_logic;
         s_endPC2MEM : out std_logic_vector(7 downto 0);
         s_rirw: in std_logic;
@@ -69,7 +69,7 @@ begin
                 "00100000000" when s_ri2dec = "00100000" else
                 "00010000000" when s_ri2dec = "00110000" else
                 "00001000000" when s_ri2dec = "01000000" else
-                "01000100000" when s_ri2dec = "01010000" else
+                "00000100000" when s_ri2dec = "01010000" else
                 "00000010000" when s_ri2dec = "01100000" else
                 "00000001000" when s_ri2dec = "10000000" else
                 "00000000100" when s_ri2dec = "10010000" else
