@@ -8,7 +8,7 @@ entity uc_control is
         intFlags : in std_logic_vector(1 downto 0);
 
         barr_stuff : out std_logic_vector(10 downto 0)
-
+        
         --barr_inc : out std_logic;
         --barr_pc  : out std_logic;
         --ula_op   : out std_logic_vector(2 downto 0);  
@@ -93,11 +93,18 @@ architecture varusAp of uc_control is
         );
     end component;
 
+    component JNZ is
+        port(
+            counter    : in std_logic_vector(2 downto 0);
+            barr_stuff : out std_logic_vector(10 downto 0)
+        );
+    end component;
+
     -- Signals --
 
     signal s_counter : std_logic_vector (2 downto 0);
-    signal NOP_out, STA_out, LAAO_out, NOT_out, HLT_out, JMP_out : std_logic_vector(10 downto 0);
-    
+    signal NOP_out, STA_out, LAAO_out, NOT_out, HLT_out, JMP_out, JNZ_out : std_logic_vector(10 downto 0);
+    signal matters : std_logic;
 begin
     u_counter : counter port map(clk, cl, s_counter);
     u_NOP : NOP port map(s_counter, NOP_out);
@@ -106,12 +113,23 @@ begin
     u_NOT : NOTT port map(s_counter, NOT_out);
     u_HLT : HLT port map(s_counter, HLT_out);
     u_JMP : JMP port map(s_counter, intFlags, JMP_out);
+    u_JNZ : JNZ port map(s_counter, JNZ_out);
 
+    --matters <= intFlags(1) when dec2uc = "00000000100" else
+    --matters <= intFlags(0) when dec2uc = "00000000010" else
+    --'Z';
+    
+    
 
     barr_stuff <= NOP_out when dec2uc = "10000000000" else
     STA_out when dec2uc = "01000000000" else
     LAAO_out when dec2uc = "00100000000" or dec2uc = "00010000000" or dec2uc = "00001000000" or dec2uc = "00000100000" else
     NOT_out when dec2uc = "00000010000" else
+    JMP_out when dec2uc = "00000001000" else
+    JMP_out when dec2uc = ("00000000100") and (intFlags = "10" or intFlags = "11") else    
+    JNZ_out when dec2uc = ("00000000100") and intFlags = "00" else    
+    JMP_out when dec2uc = ("00000000010") and (intFlags = "01" or intFlags = "11") else
+    JNZ_out when dec2uc = ("00000000010") and intFlags = "00" else
     HLT_out when dec2uc = "00000000001" else
     (others => 'Z');
 

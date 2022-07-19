@@ -66,7 +66,7 @@ architecture cha_mate of neander is
         port(
             dec2uc   : in std_logic_vector(10 downto 0);
             clk, cl  : in std_logic;
-
+            intFlags : in std_logic_vector(1 downto 0);
             barr_stuff : out std_logic_vector(10 downto 0)
 
             --barr_inc : out std_logic;
@@ -106,5 +106,5 @@ begin
     u_ula : ula port map(interface_barramento, cl, clk, barr_stuff(0), barr_stuff(1), ula_op, intFlags);
     u_memory : memory port map(cl, clk, barr_stuff(9), barr_stuff(2), barr_stuff(1), barr_stuff(3), s_endPC2MEM, interface_barramento, interface_barramento);
     u_pc : pc port map(clk, cl, barr_stuff(10), interface_barramento, barr_stuff(5), s_endPC2MEM, barr_stuff(4), s_dec2uc);
-    u_uc : uc_control port map(s_dec2uc, clk, cl, barr_stuff);
+    u_uc : uc_control port map(s_dec2uc, clk, cl, intFlags, barr_stuff);
 end architecture;
